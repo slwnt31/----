@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1883E5;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #a9a9a9;
+}
+
+.logo {
+    position: absolute;
+    left: 100px;
+}
+
+.image {
+    width: 64px;
+    height: 68px;
+}
+
+.m_bar {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: underline;
+    margin-right: 40px;
+    font-size: 30px;
+}
+
+#m_link:hover {
+    background-color: #FFD950;
+    border-radius: 30px;
+}
+
+#m_link:link {color: black;}
+#m_link:visited {color: black;}
+
+.m_ham {
+    display: none;
+}
+
+.m_under {display: none;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    font-family: 'Pretendard-Regular';
+}
+
+@media (max-width:800px) {
+    .header {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 80px;
+        background-color: #1883E5;
+        border-radius: 50px;
+        box-shadow: 5px 5px 5px #a9a9a9;
+    }
+
+    .logo {
+        position: absolute;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m_bar {display: none;}
+
+    a {text-decoration: none;}
+
+    .m_ham {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .m_under {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(156, 220, 245);
+        border-radius: 0 0 50px 50px;
+        width: 151px;
+        height: 201px;
+        margin-left: 50%;
+
+    }
+
+    .m_under li {
+        text-decoration: none;
+        align-items: center;
+        padding: 7px;
+        text-decoration: underline;
+    }
+
+    #m_Mlink { 
+        margin: 0;
+        font-size: 20px;
+        }
+    
+    #m_Mlink:hover {background-color: #FFD950;
+        border-radius: 30px;}
+
+    #m_Mlink:link {color: black;}
+    #m_Mlink:visited {color: black;}
+
+    .m_under.active {display: flex;}
+}
